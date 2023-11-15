@@ -26,15 +26,43 @@ Não possuo domínio nesta área, porém posso montar uma solução nesta mesma 
 Será necessário desenvolver:
 - Um sistema para gerenciar os fluxos e respostas
   - Será necessário levantar outros requisitos
-  - Custos:
-    - Desenvolvimento (tempo pode variar conforme requisitos)
-    - Hospedagem (acredito que seja um valor baixo, batendo no máximo 10 reais)
 - Plataforma para visualizar os contatos e gerenciá-los
   - Pode ser substituído por alguma outra forma manual (planilha/msg por whatsapp/e-mail automatizado/etc)
   - Requisitos dependem do que for definido para o sistema
-  - Custos:
-    - Desenvolvimento (tempo pode variar conforme requisitos)
-    - Hospedagem (acredito que seja um valor bem baixo)
+- Custos:
+  - Desenvolvimento (tempo pode variar conforme requisitos)
+  - Hospedagem (acredito que seja um valor baixo, variando com a quantidade de clientes atendidos)
 
 ---
-## Ideia 2: Site/Aplicativo próprio para atendimento
+## Ideia 2: Aplicativo/Site próprio para atendimento
+Como ideia inicial proposta, foi pensado um aplicativo que teria duas visões: cliente e prestador (Personal Chef). Em resumo, o cliente, através do aplicativo, faz seu contato com o prestador fornecendo todas as informações necessárias para seja feito o serviço e o prestador recebe estas informações de forma estruturada, de acordo com o que é mais relevante para encaixar os atendimentos.
+
+Por mais que tenha sido pensado um aplicativo, é possível idealizar esta solução também ou exclusivamente por meio de um site, concentrando as informações (dados dos clientes, agendamentos, etc) em base única.  
+
+Será necessário desenvolver:
+- Um sistema contendo a lógica unificando a base de dados (backend)
+  - Requisitos propostos:
+    - Definir formulário de perguntas para o cliente
+    - Receber formulário de perguntas pelo cliente
+    - Listar agendamentos confirmados
+    - Notificar novo agendamento confirmados
+  - Demais requisitos teriam que ser confirmados, como:
+    - Haveria cadastro único por cliente?
+    - Cliente faria login no sistema?
+    - Forma de notificação de novo agendamento
+    - Forma de visualizações, dependendo da abordagem definida para a plataforma de atendimento/gestão 
+- Plataforma para visualizar os agendamentos e clientes (app ou site)
+  - Requisitos propostos:
+    - Login por e-mail e senha ou integração do Google, Microsoft, Apple, etc
+    - Cadastro utilizando dados do cliente
+    - Tela para apresentação do formulário de agendamento (visão cliente)
+    - Tela para visualização de agendamentos feitos (visão cliente)
+    - Tela para visualização de agendamentos (visão prestador)
+    - Tela para visualização de clientes (visão prestador)
+  - Requisitos a confirmar:
+    - Dados utilizados para cadastro do cliente
+    - Quais seriam as visualizações de agendamentos na visão prestador? 
+    - Será necessário confirmar o agendamento por parte do prestador?
+- Custos:
+  - Desenvolvimento (tempo pode variar conforme requisitos)
+  - Hospedagem (acredito que seja um valor baixo)
